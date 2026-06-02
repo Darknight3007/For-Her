@@ -1,0 +1,243 @@
+/* ===========================================================
+   Royal Purple Forgiveness Experience — Global Styles
+   ----------------------------------------------------------
+   To change theme colors, see :root color variables below.
+   To swap fonts, change @import URLs and font-family vars.
+=========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* shadcn variables (kept for shadcn components) */
+        --background: 270 100% 5%;
+        --foreground: 240 67% 95%;
+        --card: 270 60% 11%;
+        --card-foreground: 240 67% 95%;
+        --popover: 270 60% 11%;
+        --popover-foreground: 240 67% 95%;
+        --primary: 271 100% 26%;
+        --primary-foreground: 51 100% 50%;
+        --secondary: 274 86% 36%;
+        --secondary-foreground: 240 67% 95%;
+        --muted: 270 30% 18%;
+        --muted-foreground: 240 30% 75%;
+        --accent: 51 100% 50%;
+        --accent-foreground: 271 100% 10%;
+        --destructive: 0 62% 30%;
+        --destructive-foreground: 240 67% 95%;
+        --border: 51 60% 40%;
+        --input: 270 40% 22%;
+        --ring: 51 100% 50%;
+        --radius: 0.75rem;
+
+        /* Royal palette tokens — adjust here to retheme */
+        --rp-bg: #0B0014;
+        --rp-surface: #1A0A2E;
+        --rp-primary: #4B0082;
+        --rp-secondary: #6A0DAD;
+        --rp-gold: #FFD700;
+        --rp-lavender: #E6E6FA;
+        --rp-pink: #FFB6C1;
+        --rp-silver: #C0C0C0;
+        --rp-ivory: #FFFFF0;
+    }
+}
+
+@layer base {
+    * { @apply border-border; }
+    html, body, #root { height: 100%; }
+    body {
+        margin: 0;
+        background: var(--rp-bg);
+        color: var(--rp-ivory);
+        font-family: 'Outfit', sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+    }
+    ::selection { background: rgba(255, 215, 0, 0.35); color: #fff; }
+}
+
+/* ---------- Typography helpers ---------- */
+.font-serif-royal { font-family: 'Cormorant Garamond', serif; letter-spacing: -0.01em; }
+.font-script { font-family: 'Great Vibes', cursive; font-weight: 400; }
+.font-sans-luxe { font-family: 'Outfit', sans-serif; }
+
+.text-gold { color: var(--rp-gold); }
+.text-lavender { color: var(--rp-lavender); }
+.text-ivory { color: var(--rp-ivory); }
+
+/* ---------- Glass panel ---------- */
+.glass-royal {
+    background: rgba(26, 10, 46, 0.55);
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border: 1px solid rgba(255, 215, 0, 0.18);
+    box-shadow:
+        0 8px 32px rgba(75, 0, 130, 0.35),
+        inset 0 1px 0 rgba(255, 215, 0, 0.12);
+}
+.glass-soft {
+    background: rgba(26, 10, 46, 0.4);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(230, 230, 250, 0.08);
+}
+
+/* ---------- Gold gradients ---------- */
+.text-gold-gradient {
+    background: linear-gradient(135deg, #FFD700 0%, #FFB347 40%, #FFD700 60%, #FFF2A8 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+.border-gold {
+    border: 1px solid rgba(255, 215, 0, 0.35);
+}
+.shadow-gold {
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.25), 0 0 60px rgba(255, 215, 0, 0.08);
+}
+.shadow-purple {
+    box-shadow: 0 12px 50px rgba(106, 13, 173, 0.5);
+}
+
+/* ---------- Living background animations ---------- */
+@keyframes float-up {
+    0%   { transform: translateY(0) translateX(0) rotate(0deg); opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { transform: translateY(-110vh) translateX(var(--drift, 40px)) rotate(360deg); opacity: 0; }
+}
+@keyframes petal-fall {
+    0%   { transform: translateY(-10vh) translateX(0) rotate(0deg); opacity: 0; }
+    10%  { opacity: 0.85; }
+    100% { transform: translateY(110vh) translateX(var(--drift, 80px)) rotate(540deg); opacity: 0; }
+}
+@keyframes twinkle {
+    0%, 100% { opacity: 0.2; transform: scale(0.8); }
+    50%      { opacity: 1;   transform: scale(1.3); }
+}
+@keyframes mist-drift {
+    0%   { transform: translateX(-15%) translateY(0); }
+    50%  { transform: translateX(10%) translateY(-2%); }
+    100% { transform: translateX(-15%) translateY(0); }
+}
+@keyframes glow-pulse {
+    0%, 100% { box-shadow: 0 0 25px rgba(255, 215, 0, 0.25), 0 0 60px rgba(255, 215, 0, 0.1); }
+    50%      { box-shadow: 0 0 50px rgba(255, 215, 0, 0.5), 0 0 120px rgba(255, 215, 0, 0.2); }
+}
+@keyframes crown-float {
+    0%, 100% { transform: translateY(0) rotate(-1deg); }
+    50%      { transform: translateY(-12px) rotate(1deg); }
+}
+@keyframes shimmer {
+    0%   { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+@keyframes confetti-fall {
+    0%   { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+}
+
+.animate-glow-pulse { animation: glow-pulse 3.2s ease-in-out infinite; }
+.animate-crown { animation: crown-float 5s ease-in-out infinite; }
+.animate-twinkle { animation: twinkle 2.6s ease-in-out infinite; }
+.animate-mist { animation: mist-drift 24s ease-in-out infinite; }
+.animate-shimmer {
+    background: linear-gradient(110deg, transparent 30%, rgba(255,215,0,0.35) 50%, transparent 70%);
+    background-size: 200% 100%;
+    animation: shimmer 3.5s linear infinite;
+}
+
+/* ---------- Parchment (love letter) ---------- */
+.parchment {
+    background:
+        radial-gradient(ellipse at top left, rgba(255, 240, 200, 0.08), transparent 60%),
+        radial-gradient(ellipse at bottom right, rgba(255, 215, 0, 0.08), transparent 60%),
+        linear-gradient(180deg, #2a1340 0%, #1a0a2e 100%);
+    position: relative;
+}
+.parchment::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image:
+        repeating-linear-gradient(0deg, rgba(255,255,255,0.015) 0 1px, transparent 1px 4px),
+        repeating-linear-gradient(90deg, rgba(255,255,255,0.015) 0 1px, transparent 1px 4px);
+    pointer-events: none;
+    border-radius: inherit;
+}
+
+/* ---------- Polaroid frame ---------- */
+.polaroid {
+    background: #fffef5;
+    padding: 12px 12px 56px;
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 215, 0, 0.25);
+    transition: transform 0.5s cubic-bezier(.2,.8,.2,1), box-shadow 0.5s;
+}
+.polaroid:hover { transform: translateY(-8px) rotate(0deg) scale(1.03); box-shadow: 0 22px 60px rgba(255, 215, 0, 0.25), 0 0 0 1px rgba(255, 215, 0, 0.5); }
+
+/* ---------- Flip card ---------- */
+.flip-card { perspective: 1200px; }
+.flip-card-inner {
+    position: relative;
+    width: 100%; height: 100%;
+    transition: transform 0.8s cubic-bezier(.2,.8,.2,1);
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner,
+.flip-card.is-flipped .flip-card-inner { transform: rotateY(180deg); }
+.flip-face {
+    position: absolute; inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    display: flex; align-items: center; justify-content: center;
+    border-radius: 1rem;
+}
+.flip-back { transform: rotateY(180deg); }
+
+/* ---------- Calendar overrides (react-day-picker inside dark theme) ---------- */
+.rdp { color: var(--rp-ivory); margin: 0; }
+.rdp-caption { padding: 4px 8px 8px; position: relative; }
+.rdp-caption_dropdowns { display: flex; gap: 8px; align-items: center; justify-content: center; width: 100%; }
+/* Hide all default labels/spans/chevrons inside caption — keep only the <select> */
+.rdp-caption_dropdowns * { display: none !important; }
+.rdp-caption_dropdowns,
+.rdp-caption_dropdowns > div,
+.rdp-caption_dropdowns select.rdp-dropdown { display: revert !important; }
+.rdp-caption_dropdowns > div { display: inline-block !important; }
+.rdp-dropdown {
+    background: rgba(11, 0, 20, 0.9);
+    color: var(--rp-ivory);
+    border: 1px solid rgba(255, 215, 0, 0.35);
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    appearance: auto;
+    cursor: pointer;
+}
+.rdp-dropdown:focus { outline: 2px solid var(--rp-gold); }
+.rdp-dropdown option { background: #1A0A2E; color: var(--rp-ivory); }
+.rdp-caption_label { display: none !important; }
+.rdp-day_selected, .rdp-day_selected:focus-visible, .rdp-day_selected:hover {
+    background: var(--rp-gold) !important;
+    color: var(--rp-primary) !important;
+}
+.rdp-day:hover:not([disabled]) { background: rgba(255,215,0,0.15); color: var(--rp-gold); }
+.rdp-head_cell { color: rgba(230,230,250,0.6); }
+
+/* ---------- Hide scrollbar in lightbox ---------- */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
+
+/* ---------- Accessibility focus ---------- */
+:focus-visible { outline: 2px solid var(--rp-gold); outline-offset: 3px; border-radius: 4px; }
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}

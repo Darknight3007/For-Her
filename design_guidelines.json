@@ -1,0 +1,147 @@
+{
+  "theme": "Dark",
+  "archetype": "5 (Luxury)",
+  "emotional_tone": "Regal, deeply romantic, sincere, highly immersive, elegant, nostalgic.",
+  "colors": {
+    "background": {
+      "base": "#0B0014",
+      "surface": "#1A0A2E",
+      "glass": "rgba(26, 10, 46, 0.6)",
+      "gradient_start": "#0B0014",
+      "gradient_end": "#2D004D"
+    },
+    "brand": {
+      "primary": "#4B0082",
+      "secondary": "#6A0DAD",
+      "accent_gold": "#FFD700"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#E6E6FA",
+      "accent": "#FFD700",
+      "muted": "#C0C0C0"
+    },
+    "decorative": {
+      "soft_pink": "#FFB6C1",
+      "silver": "#C0C0C0",
+      "ivory": "#FFFFF0",
+      "gold_glow": "rgba(255, 215, 0, 0.3)"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "headings": "'Cormorant Garamond', serif",
+      "body": "'Outfit', sans-serif",
+      "script_accent": "'Great Vibes', cursive"
+    },
+    "scales": {
+      "h1": "text-5xl md:text-6xl+ tracking-tighter leading-none",
+      "h2": "text-3xl md:text-5xl tracking-tight leading-none",
+      "h3": "text-2xl md:text-3xl tracking-tight",
+      "body": "text-base md:text-lg leading-relaxed text-secondary",
+      "script": "text-4xl md:text-5xl font-normal tracking-normal"
+    },
+    "notes": "Headings must never use Inter or generic sans. Apply 'tracking-tighter' on large headings. Script font used sparingly for emotional quotes or signatures."
+  },
+  "spacing_and_layout": {
+    "container_padding": "px-6 md:px-12 lg:px-24",
+    "section_spacing": "py-24 md:py-32 lg:py-40",
+    "grid_system": "Bento Grid Protocol (Tetris mode) for galleries. Generous gap-8 to gap-12.",
+    "alignment": "Center-aligned for hero and romantic quotes. Left-aligned for timeline and long-form apologies to ensure readability."
+  },
+  "surface_strategies": {
+    "glassmorphism": "Used for Password Lock, Love Timer, and floating nav. bg-[#1A0A2E]/60 backdrop-blur-xl border border-[#FFD700]/20 shadow-[0_8px_32px_rgba(75,0,130,0.3)].",
+    "borders": "1px solid rgba(255, 215, 0, 0.15) for cards. Avoid thick solid borders.",
+    "shadows": "Ambient glows using colored shadows, e.g., shadow-[0_0_20px_rgba(255,215,0,0.1)]."
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1668182148176-71ee34380376?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzB8MHwxfHNlYXJjaHwyfHxyb3lhbCUyMHBhbGFjZSUyMGludGVyaW9yfGVufDB8fHx8MTc4MDM4NTcwMHww&ixlib=rb-4.1.0&q=85",
+      "description": "Royal palace interior. Must be overlaid with bg-[#0B0014]/70 to ensure text readability."
+    },
+    "crown_element": {
+      "url": "https://images.unsplash.com/photo-1673640525972-3c0dd5e6a933?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1OTN8MHwxfHNlYXJjaHwxfHxnb2xkJTIwY3Jvd258ZW58MHx8fHwxNzgwMzg1NzAwfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Gold crown to be clipped or blended at the top of the hero section."
+    },
+    "wax_seal": {
+      "url": "https://images.pexels.com/photos/5425649/pexels-photo-5425649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Vintage wax seal parchment for the Love Letter section."
+    },
+    "celebration_roses": {
+      "url": "https://images.pexels.com/photos/6822851/pexels-photo-6822851.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Red roses for the Yes Celebration and Forever section background."
+    },
+    "photo_album_placeholders": {
+      "url": "https://images.unsplash.com/photo-1518709779341-56cf4535e94b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjV8MHwxfHNlYXJjaHwyfHxyZWQlMjByb3NlcyUyMHJvbWFuY2V8ZW58MHx8fHwxNzgwMzg1NzAwfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Use as a fallback/placeholder in the Photo Album masonry grid. Provide instructions in UI for the user to swap these."
+    }
+  },
+  "components": {
+    "password_lock": {
+      "description": "Full screen overlay. Glassmorphism card in center. Input for calendar date.",
+      "visuals": "Dark blurred background. Input styled with bottom border only (no box), glowing gold on focus."
+    },
+    "hero": {
+      "description": "Full viewport height. Background image (palace) heavily darkened.",
+      "visuals": "Animated crown graphic. Typography in Cormorant Garamond. Floating hearts and sparkles via framer-motion or TSParticles."
+    },
+    "love_timer": {
+      "description": "Displays Years, Months, Days, Hours, Minutes, Seconds.",
+      "visuals": "Grid layout (cols-3 or cols-6). Each number in a glassmorphic box with gold text and ivory label."
+    },
+    "apology_story": {
+      "description": "5 staggered reveal cards outlining the apology.",
+      "visuals": "Asymmetric scrolling list. Cards overlap slightly. Dark purple surface with thin gold borders."
+    },
+    "memory_timeline": {
+      "description": "Luxury vertical timeline.",
+      "visuals": "Central gold line (`w-px bg-[#FFD700]/50`). Nodes are glowing gold dots. Cards alternating sides. 'Magical diary pages' aesthetic using ivory text on dark surfaces."
+    },
+    "photo_album": {
+      "description": "Masonry grid of photos with polaroid frames.",
+      "visuals": "Images have `border-4 border-white/10` and subtle tilt. Lightbox opening on click."
+    },
+    "love_letter": {
+      "description": "Parchment texture background with wax seal.",
+      "visuals": "Uses the wax seal image. Text is styled like handwriting (Great Vibes script). Gold glowing frame around the container."
+    },
+    "reasons_i_love_you": {
+      "description": "8 flipping cards.",
+      "visuals": "CSS or Framer Motion 3D rotateY on hover. Front shows a number/icon, back shows the reason."
+    },
+    "special_moments": {
+      "description": "4 highlight bento cards.",
+      "visuals": "2x2 or bento grid. Each card has heart animations on hover. Background images with dark overlays."
+    },
+    "forgiveness_meter": {
+      "description": "Animated progression bar.",
+      "visuals": "Fills up on scroll or click. Gradient from Primary Purple to Accent Gold. Glow effect."
+    },
+    "final_question": {
+      "description": "'DO YOU FORGIVE ME?' interactive prompt.",
+      "visuals": "Massive typography. 'YES' button pulses and grows on hover. 'NO' button runs away (chase mechanic: changes absolute position on hover)."
+    },
+    "celebration_screen": {
+      "description": "Triggered by clicking 'YES'.",
+      "visuals": "Fullscreen overlay. Confetti animation, floating roses, fireworks effect. 'Thank You' message."
+    }
+  },
+  "motion_and_interactions": {
+    "scrolling": "Use 'lenis' library for momentum scrolling. It adds weight and premium feel.",
+    "particles": "Use 'tsparticles' (or react-tsparticles) for moving mist, floating hearts, and star sparkles across the entire background.",
+    "hover_states": "Cards lift `-translate-y-2` with an increased gold shadow. Text elements shift slightly.",
+    "reveal": "Use framer-motion `whileInView` for fade-up and subtle scale-in of sections as they enter the viewport."
+  },
+  "icons": "Use @phosphor-icons/react (Duotone weight) for luxury, elegant iconography (hearts, crowns, stars).",
+  "instructions_to_main_agent": [
+    "Strictly follow the Dark Theme + Luxury Archetype 5. No stark white backgrounds anywhere.",
+    "Install and use `framer-motion`, `lenis`, and `tsparticles` (or `react-tsparticles`) for the magical/living background and scroll effects.",
+    "Install Google Fonts 'Cormorant Garamond', 'Outfit', and 'Great Vibes' via standard CSS imports in index.css.",
+    "Implement the 'NO' button chase mechanic using standard React state (x, y coordinates) updated `onMouseEnter`.",
+    "Ensure all interactive elements have `data-testid` attributes.",
+    "Never use pure black (#000000). Use the provided background.base (#0B0014).",
+    "For the Love Letter, use the parchment image URL provided, apply a heavy vignette/gradient to blend it into the dark background.",
+    "Create a clean code structure keeping the single-page scroll highly modular (e.g., HeroSection.jsx, TimelineSection.jsx).",
+    "Add code comments explaining to the user exactly where and how to replace the image placeholder URLs with their own real photos."
+  ]
+}
