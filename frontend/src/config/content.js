@@ -73,7 +73,7 @@ export const content = {
   // Replace `src` with your own photo URL or a local path under /public.
   // While left as {IMAGE_X}, a curated placeholder image renders in its place.
   photos: [
-    { src: "src/assets/images/1.jpg", caption: "the first picture I never wanted to delete" },
+    { src: "assests\Images\Hemu1.jpg", caption: "the first picture I never wanted to delete" },
     { src: "{IMAGE_2}", caption: "this is what you do to a sunset" },
     { src: "{IMAGE_3}", caption: "halfway through laughing — exactly how I love you" },
     { src: "{IMAGE_4}", caption: "rain, ramen, and you" },
