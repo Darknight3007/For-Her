@@ -31,10 +31,10 @@ alias: {
 "@": path.resolve(__dirname, "src"),
 },
 
-```
-configure: (config) => {
-  config.watchOptions = {
-    ...config.watchOptions,
+
+configure: (webpackConfig) => {
+  webpackConfig.watchOptions = {
+    ...webpackConfig.watchOptions,
     ignored: [
       "**/node_modules/**",
       "**/.git/**",
@@ -45,23 +45,27 @@ configure: (config) => {
     ],
   };
 
-  if (healthPluginInstance) {
-    config.plugins.push(healthPluginInstance);
+  if (config.enableHealthCheck && healthPluginInstance) {
+    webpackConfig.plugins.push(healthPluginInstance);
   }
 
-  return config;
+  return webpackConfig;
 },
-```
+
 
 },
 };
 
 webpackConfig.devServer = (devServerConfig) => {
-if (config.enableHealthCheck && setupHealthEndpoints && healthPluginInstance) {
+if (
+config.enableHealthCheck &&
+setupHealthEndpoints &&
+healthPluginInstance
+) {
 const originalSetupMiddlewares =
 devServerConfig.setupMiddlewares;
 
-```
+
 devServerConfig.setupMiddlewares = (
   middlewares,
   devServer
@@ -80,7 +84,7 @@ devServerConfig.setupMiddlewares = (
 
   return middlewares;
 };
-```
+
 
 }
 

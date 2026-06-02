@@ -73,15 +73,18 @@ export const content = {
   // Replace `src` with your own photo URL or a local path under /public.
   // While left as {IMAGE_X}, a curated placeholder image renders in its place.
   photos: [
-    { src: "assests\Images\Hemu1.jpg", caption: "the first picture I never wanted to delete" },
-    { src: "{IMAGE_2}", caption: "this is what you do to a sunset" },
-    { src: "{IMAGE_3}", caption: "halfway through laughing — exactly how I love you" },
-    { src: "{IMAGE_4}", caption: "rain, ramen, and you" },
-    { src: "{IMAGE_5}", caption: "the one I keep coming back to" },
-    { src: "{IMAGE_6}", caption: "you, mid-twirl, mid-magic" },
-    { src: "{IMAGE_7}", caption: "a quiet morning that owns me" },
-    { src: "{IMAGE_8}", caption: "my favorite mistake-free day" },
+    { src: "/assests/Images/Hemu1.jpg", caption: "Ye wali hemu meri favourate hemu hai yk.. i just love her " },
+    { src: "/assests/Images/Hemu (1).jpg", caption: "Iss photo ko jab tune bheja tha na maa kasam dil garden ho gaya tha mera. I mean kitni sundar hai yaar tu iss saree mei..ek pari ki tarah  ...(*/ω＼*)" },
+    { src: "/assests/Images/Hemu (2).jpg", caption: "YK ye wali photo mere dil mei alag hi jagah rkhti hai.. idk kyu. Bass jesi tu dikhti hai na isme.. its like mera heart beat skip kar deta. just gorgeous like meh tujhe aise dekhta hu toh muh se mommy-vati niklata hai pata nhi kyu!!" },
+    { src: "/assests/Images/Hemu (3).jpg", caption: "ye wali dress meri favouraite thi.. ig jitna mujhe yaad hai tu mere exam ke din jab mujhse milne aayi thi tbb bhi yehi pehna tha. I mean I am sorry uss din zyada time nhi mil ska but tu bahut pyari lag rhi thi uss din 💕💕" },
+    { src: "/assests/Images/Hemu (4).jpg", caption: "umm.. tu na janti nhi ye photo meh raat ke kitne kitne bje tkk dekhte huye jagta hu.. idk iss photo mei aisa kya hai. Bas ek nasha sa chadd jata hai tera isse dekhke. Kitni khubsurat dikh rhi hai yaar tu isme 😍😍" },
+    { src: "/assests/Images/Hemu (5).jpg", caption: "Ye aagyi na meri dusri favourite photo.. mujhe teri smile badi achi lagti hai inn pics mei.. like agr meh tere sath hota na tujhe kass ke pakad hi leta. Jab tu tayyar hokr photo bhejti hai tbb duniya ki sbse pyari ladki lagti hai.. par jab tu aise photos bhejti hai na.. Hayeee mere dil mei na tu alag level ki aag laga deti hai." },
+    { src: "/assests/Images/Hemu (6).jpg", caption: "Ye tere easybuy vale din ki photo... maa kasam teri smile per na fida hojaunga meh, itni pyari hai meri hemu (/▽＼)" },
+    { src: "/assests/Images/Hemu (7).jpg", caption: "ye uss din ki hi hai.. zyada time mile nhi the but tujhse milke bahut acha laga tha.. agr meh yaad kru toh kuch din pehle humara jhgda hua tha maybe fir kuch toh baat kiye tbb tune mujhe bulaya tha vaha pe.. aur sachi jab tu apne phone pe mujhe teri pics dikha rhi thi na dil dhak dhak kr rha tha.. tu bhut pyari ;gti hai yk pink color mei.. meri favourite hemu hai pink-hemu." },
+    { src: "/assests/Images/Hemu (8).jpg", caption: "this is what you do to a sunset" },
+    { src: "/assests/Images/Hemu (9).jpg", caption: "this is what you do to a sunset" },
   ],
+
   photoFallback:
     "https://images.unsplash.com/photo-1518709779341-56cf4535e94b?auto=format&fit=crop&w=900&q=80",
 
