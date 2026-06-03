@@ -15,13 +15,13 @@ export default function ApologyStory() {
         >
           <div className="inline-flex items-center gap-2 text-gold/80 text-xs tracking-[0.4em] uppercase mb-3">
             <Feather className="w-4 h-4" />
-            A Royal Apology
+            Meri Madam ke liye special Apology
           </div>
           <h2 className="font-serif-royal text-4xl md:text-6xl text-ivory tracking-tight">
-            I owe you these words
+            Yeh sab meri galti thi.. I am sorry..
           </h2>
           <p className="font-script text-3xl md:text-4xl text-gold-gradient mt-1">
-            and so much more
+            I am really Sorry.. and i love you
           </p>
         </motion.div>
 

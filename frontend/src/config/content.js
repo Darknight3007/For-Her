@@ -60,7 +60,7 @@ export const content = {
     {
       title: "Tera 'LOYAL' BF",
       text:
-        "han.. tera vo loyal boyfriend, maa kasam sab set tha, tera hath mere hath ke uper tha.. ek second aur chahiye tha bss. but fir tera boyfriend aagya sare scene ki maa behen krne. aaj bhi jab yaad krta hu toh rona aata hai ┗( T﹏T )┛",
+        "han.. tera vo loyal boyfriend, maa kasam sab set tha, tera hath mere hath ke uper tha.. ek second aur chahiye tha bss. but fir tera boyfriend aagya honk honk krte krte.. sare scene ki maa behen krne. aaj bhi jab yaad krta hu toh rona aata hai.. tera hath!!!! ┗( T﹏T )┛",
     },
     {
       title: "I Love You",
@@ -81,7 +81,7 @@ export const content = {
     { src: "/assests/Images/Hemu (5).jpg", caption: "Ye aagyi na meri dusri favourite photo.. mujhe teri smile badi achi lagti hai inn pics mei.. like agr meh tere sath hota na tujhe kass ke pakad hi leta. Jab tu tayyar hokr photo bhejti hai tbb duniya ki sbse pyari ladki lagti hai.. par jab tu aise photos bhejti hai na.. Hayeee mere dil mei na tu alag level ki aag laga deti hai." },
     { src: "/assests/Images/Hemu (6).jpg", caption: "Ye tere easybuy vale din ki photo... maa kasam teri smile per na fida hojaunga meh, itni pyari hai meri hemu (/▽＼)" },
     { src: "/assests/Images/Hemu (7).jpg", caption: "ye uss din ki hi hai.. zyada time mile nhi the but tujhse milke bahut acha laga tha.. agr meh yaad kru toh kuch din pehle humara jhgda hua tha maybe fir kuch toh baat kiye tbb tune mujhe bulaya tha vaha pe.. aur sachi jab tu apne phone pe mujhe teri pics dikha rhi thi na dil dhak dhak kr rha tha.. tu bhut pyari ;gti hai yk pink color mei.. meri favourite hemu hai pink-hemu." },
-    { src: "/assests/Images/Hemu (8).jpg", caption: "this is what you do to a sunset" },
+    { src: "/assests/Images/Hemu (8).jpg", caption: "Aur ye jo tune Ganesh Chathurthi ke din yellow pehenke photo bheja tha na hemu.. 💕💕💕 Itni Sundar lgri thi na tu.. yaad hai tune ek baar pucha tha mujhe Ganpati bappa ki ankhon mei kya dikhta hai? Uss time mere pas jawab nhi tha par jbb teri aankho mei dekhta hu na shyd mujhe pata hai.. aur yellow dress mei maa kasam UMMAHHH" },
     { src: "/assests/Images/Hemu (9).jpg", caption: "this is what you do to a sunset" },
   ],
 

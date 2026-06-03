@@ -15,10 +15,10 @@ export default function MemoryTimeline() {
         >
           <div className="inline-flex items-center gap-2 text-gold/80 text-xs tracking-[0.4em] uppercase mb-3">
             <BookHeart className="w-4 h-4" />
-            Our Magical Diary
+            Ye chije yaad hai ya nahi....
           </div>
           <h2 className="font-serif-royal text-4xl md:text-6xl text-ivory tracking-tight">
-            Pages from us
+            inko yaad krke aaj bhi dil khush ho jata hai...
           </h2>
         </motion.div>
 

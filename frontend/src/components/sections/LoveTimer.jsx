@@ -64,7 +64,7 @@ export default function LoveTimer() {
             {content.timerTitle}
           </h2>
           <p className="font-script text-3xl md:text-4xl text-gold-gradient mt-2">
-            every second written in gold
+            Itna time ho gaya tere bina jeete huye...
           </p>
         </motion.div>
 

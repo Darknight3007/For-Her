@@ -30,10 +30,10 @@ export default function PhotoAlbum() {
             Our Royal Gallery
           </div>
           <h2 className="font-serif-royal text-4xl md:text-6xl text-ivory tracking-tight">
-            Polaroids of us
+            Duniya ki sabse khoobsurat ladki ki pics hai yaha pe
           </h2>
           <p className="font-script text-3xl md:text-4xl text-gold-gradient mt-1">
-            framed in gold, kept forever
+            Yk.. ik mehne kaha thi ki delete kiye par pagal thodi na hu ki sbhi krunga.. toh ye hai kuch.. Meri favorite ladki ki meri favorite photos..
           </p>
         </motion.div>
 
