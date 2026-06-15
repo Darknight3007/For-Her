@@ -82,7 +82,7 @@ export const content = {
     { src: "/assests/Images/Hemu (6).jpg", caption: "Ye tere easybuy vale din ki photo... maa kasam teri smile per na fida hojaunga meh, itni pyari hai meri hemu (/▽＼)" },
     { src: "/assests/Images/Hemu (7).jpg", caption: "ye uss din ki hi hai.. zyada time mile nhi the but tujhse milke bahut acha laga tha.. agr meh yaad kru toh kuch din pehle humara jhgda hua tha maybe fir kuch toh baat kiye tbb tune mujhe bulaya tha vaha pe.. aur sachi jab tu apne phone pe mujhe teri pics dikha rhi thi na dil dhak dhak kr rha tha.. tu bhut pyari ;gti hai yk pink color mei.. meri favourite hemu hai pink-hemu." },
     { src: "/assests/Images/Hemu (8).jpg", caption: "Aur ye jo tune Ganesh Chathurthi ke din yellow pehenke photo bheja tha na hemu.. 💕💕💕 Itni Sundar lgri thi na tu.. yaad hai tune ek baar pucha tha mujhe Ganpati bappa ki ankhon mei kya dikhta hai? Uss time mere pas jawab nhi tha par jbb teri aankho mei dekhta hu na shyd mujhe pata hai.. aur yellow dress mei maa kasam UMMAHHH" },
-    { src: "/assests/Images/Hemu (9).jpg", caption: "this is what you do to a sunset" },
+    { src: "/assests/Images/Hemu (9).jpg", caption: "Aur fir ye pic, idk agr tujhe yaad hai.. but hmara jhagda hua tha and humne 2 din baat nhi ki thi.. fir ek dum se humne start ki and tune mujhe ye wali plus ek 4-5 aur same dress mai bheji thi aur  kaha tha ki tu ye pehen ke konkan jayegi ya fir mummy logo ke sath koi toh trip pe tha ig.. but meh nhi chahta tha tu ye pehene. YAar kitni achi dikhri thi tuuuuu. Ek dum matlan black current (mere dil mei) " },
   ],
 
   photoFallback:
@@ -103,12 +103,7 @@ Forgive me — not with grand declarations, but with the smallest, softest yes y
   reasons: [
     "the way you hum without realizing — like the universe is leaking through you",
     "your laugh is a small revolution I happily lose to every time",
-    "you turn ordinary moments into the kind I'd write home about — if you weren't home",
-    "you remember the tiny things, and somehow make them feel monumental",
-    "you are kind in a way the world hasn't earned — and you keep being kind anyway",
-    "your eyes — entire constellations, no telescope required",
-    "you make me braver and somehow softer at the same time",
-    "I love you in past, present, and grammatically impossible tenses",
+   
   ],
 
   /* -------------------------- SPECIAL MOMENTS ----------------------- */
@@ -136,7 +131,7 @@ Forgive me — not with grand declarations, but with the smallest, softest yes y
 
   /* ----------------------------- YES SCREEN ------------------------- */
   yesMessage:
-    "Thank you, my Hemu. You just gave forever its second chance — and made me the luckiest soul in any kingdom.",
+    "THHAAAANNKKKKK YOOUUUUUUU SOOO MUCHHHH, (ik choice hi nhi thi but still) 💖💖💖💖💖💖💖💖💖",
 
   /* --------------------------- FOREVER SECTION ---------------------- */
   finalForeverMessage:
