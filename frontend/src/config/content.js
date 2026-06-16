@@ -123,7 +123,7 @@ Uss din tune jb kaha na ki tune sympathy ke liye han bola, i mean thoda sa chuba
   // The meter intentionally gets stuck at 99 and waits for the
   // "I Forgive You" button — which sends it straight to infinity.
   forgivenessPercent: 99,
-  forgivenessStatus: "Stuck at the edge of grace — only Hemu can free it.",
+  forgivenessStatus: "dekhle 99% pe atka hai mera dil.... button daba de ",
 
   /* --------------------------- FINAL QUESTION ----------------------- */
   noPopups: [
