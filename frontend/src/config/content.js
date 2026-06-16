@@ -97,8 +97,17 @@ Uss din tune jb kaha na ki tune sympathy ke liye han bola, i mean thoda sa chuba
 
   /* ------------------------ REASONS I LOVE YOU ---------------------- */
   reasons: [
-    "the way you hum without realizing — like the universe is leaking through you",
-    "your laugh is a small revolution I happily lose to every time",
+    "Kyu na karu... Mereko reason thodi na cahhiye pyar krne ke liye, but yk tu meri life mei aayi aur meri zindagi ko ek nayi roshni di. I love you meri Hemu.",
+    "Well.. agr reason chahiye toh ig teri smile.",
+    "teri aankhe",
+    "teri baatei",
+    "teri choti choti harkatei",
+    "teri pyari si awaaz",
+    "tera mujhe daantna",
+    "tera mujhpe gussa krna",
+    "teri har chij jo karti hai hemu.",
+    "Aur 1000 chije jo mere dil mei hai tere liye",
+    " I love you hemu",
    
   ],
 
