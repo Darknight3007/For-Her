@@ -113,10 +113,9 @@ Uss din tune jb kaha na ki tune sympathy ke liye han bola, i mean thoda sa chuba
 
   /* -------------------------- SPECIAL MOMENTS ----------------------- */
   moments: [
-    "The first time you reached for my hand and didn't let go for hours. I haven't been quite the same person since.",
-    "Dancing barefoot in the kitchen at midnight — a kingdom no one knew existed but us.",
-    "The day you cried laughing, and I learned the sound by heart before you ever made it again.",
-    "Forehead to forehead, no words, no clock. Just you, breathing me back into a better man.",
+  "You know humare zyada special moments ntoh nhi hai kyunki hum mile hi nhi zyada but yk jo bhi humne baatie krte huye moments spend kiye hai na mere liye sbse best moment of life the mere vo",
+  "Aur kya hi hu, tujhse baat krke hi mera din ban jata hai. Tere sath baat krna mere liye ek therapy jesa hai",
+  "yk i hope hume ek aur chance mile hmare 'special moments bnane ke liye",
   ],
 
   /* ------------------------- FORGIVENESS METER ---------------------- */
@@ -140,7 +139,7 @@ Uss din tune jb kaha na ki tune sympathy ke liye han bola, i mean thoda sa chuba
 
   /* --------------------------- FOREVER SECTION ---------------------- */
   finalForeverMessage:
-    "Wherever you walk, my Hemu, my hand reaches for yours. Every road. Every weather. Every forever.",
+    "Tu jaha bhi jayegi mera hath hamesha tere sath hoga. I promise to always be there for you, in every way I can. I love you, Hemu, now and forever.",
   footerQuote:
-    "And in the quiet kingdom of my heart, Hemu, you are the only crown — and the only home.",
+    "Agr acha laga hho toh maaf krde and ig msg krle.. agr ho sake toh bata kisi din ek-adhi coffee ke liye jayenege..(without tere dosto ke pls 😭😭😭)",
 };

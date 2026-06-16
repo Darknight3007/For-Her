@@ -246,7 +246,7 @@ export default function ForgivenessMeter() {
         >
           <div className="flex items-end justify-between gap-3 mb-4 text-left">
             <span className="font-script text-2xl sm:text-3xl text-ivory leading-none drop-shadow">
-              This one cannot be measured.
+              Mera pyar hai tere liye.
             </span>
             <motion.span
               animate={{ scale: [1, 1.08, 1], rotate: [0, 2, -2, 0] }}
