@@ -141,5 +141,5 @@ Uss din tune jb kaha na ki tune sympathy ke liye han bola, i mean thoda sa chuba
   finalForeverMessage:
     "Tu jaha bhi jayegi mera hath hamesha tere sath hoga. I promise to always be there for you, in every way I can. I love you, Hemu, now and forever.",
   footerQuote:
-    "Agr acha laga hho toh maaf krde and ig msg krle.. agr ho sake toh bata kisi din ek-adhi coffee ke liye jayenege..(without tere dosto ke pls 😭😭😭)",
+    "Agr acha laga hho toh maaf krde and pls unblock krde and ig msg krle.. yk atleast koii sign toh de...agr ho sake toh bata kisi din ek-adhi coffee ke liye jayenege..(without tere dosto ke pls 😭😭😭)",
 };
