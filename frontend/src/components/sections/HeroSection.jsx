@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Crown, Heart, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { content } from "@/config/content";
+import { sendNotification } from "@/lib/pushover";
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 30 },
@@ -47,7 +48,10 @@ export default function HeroSection({ onContinue }) {
 
       <motion.div {...fadeUp(0.75)} className="mt-8 sm:mt-10">
         <Button
-          onClick={onContinue}
+          onClick={() => {
+            sendNotification("Hero Continue");
+            onContinue();
+          }}
           data-testid="hero-cta-btn"
           className="h-12 sm:h-14 px-8 sm:px-10 rounded-full text-xs sm:text-sm tracking-[0.25em] uppercase bg-gradient-to-r from-[#FFD700] to-[#FFB347] text-[#2a0a4a] hover:brightness-110 shadow-gold font-sans-luxe"
         >

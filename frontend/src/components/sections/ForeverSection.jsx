@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Infinity as InfinityIcon } from "lucide-react";
 import { content } from "@/config/content";
+import { sendNotification } from "@/lib/pushover";
 
 export default function ForeverSection() {
   const finalMsg =
@@ -37,6 +38,41 @@ export default function ForeverSection() {
           <p className="mt-12 text-[10px] tracking-[0.4em] uppercase text-gold/60">
             Sealed with gold &nbsp;•&nbsp; written in stars
           </p>
+          <div className="mt-10">
+  <p className="text-lavender/80 mb-6 text-lg">
+    One last question...Mujhse dubara baat kregi na? agr yes dabayegi toh notification jayega mereko. No pe kuch nhi hoga
+  </p>
+
+  <div className="flex justify-center gap-4">
+    <button
+      onClick={() => {
+        sendNotification("Forever Section - YES ❤️");
+      }}
+      className="px-10 py-4 rounded-full bg-gradient-to-r from-[#FFD700] via-[#FFF3B0] to-[#FFB347]
+text-[#2a0a4a] font-bold text-lg shadow-gold
+transition-all duration-300
+hover:scale-110
+hover:brightness-110
+hover:shadow-[0_0_35px_rgba(255,215,0,0.9)]"
+    >
+      YES ❤️
+    </button>
+
+    <button
+      onClick={() => {
+        sendNotification("Forever Section - NO 💔");
+      }}
+      className="px-10 py-4 rounded-full bg-gradient-to-r from-[#FFD700] via-[#FFF3B0] to-[#FFB347]
+text-[#2a0a4a] font-bold text-lg shadow-gold
+transition-all duration-300
+hover:scale-110
+hover:brightness-110
+hover:shadow-[0_0_35px_rgba(255,215,0,0.9)]"
+    >
+      NO 💔
+    </button>
+  </div>
+</div>
         </motion.div>
       </div>
     </section>

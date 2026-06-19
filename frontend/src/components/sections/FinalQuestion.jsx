@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Heart, HeartCrack } from "lucide-react";
 import { content } from "@/config/content";
+import { sendNotification } from "@/lib/pushover";
 
 const MAX_NO = 5;
 
@@ -84,7 +85,10 @@ export default function FinalQuestion({ onYes }) {
         >
           {/* YES */}
           <motion.button
-            onClick={onYes}
+            onClick={() => {
+  sendNotification("YES Button");
+  onYes();
+}}
             data-testid="yes-button"
             animate={{ scale: yesScale }}
             transition={{ type: "spring", stiffness: 200, damping: 18 }}
@@ -105,7 +109,10 @@ export default function FinalQuestion({ onYes }) {
                 key="no-btn"
                 onMouseEnter={triggerEscape}
                 onTouchStart={triggerEscape}
-                onClick={handleNoClick}
+                onClick={() => {
+          sendNotification("NO Button");
+  handleNoClick();
+}}
                 data-testid="no-button"
                 initial={{ opacity: 0, scale: 0.6 }}
                 animate={
